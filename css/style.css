@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: #15202b;
+  color: #ffffff;
+  height: 100vh;
+  border: 10px solid #ffffff;
+  -webkit-box-shadow: inset 0px 0px 5px white, inset 0px 0px 10px rgba(255, 255, 255, 0.6), inset 0px 0px 20px rgba(255, 255, 255, 0.3), inset 0px 0px 40px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 0px 0px 5px white, inset 0px 0px 10px rgba(255, 255, 255, 0.6), inset 0px 0px 20px rgba(255, 255, 255, 0.3), inset 0px 0px 40px rgba(255, 255, 255, 0.1);
+}
+
+#main-header {
+  text-align: center;
+  padding: 3vw;
+}
+
+#main-header #header-div {
+  position: relative;
+  background-color: #e4205d;
+  width: 45%;
+  margin: auto;
+}
+
+#main-header #header-div .title-div {
+  position: relative;
+  padding: 2vw;
+  border-radius: 10px;
+  border: solid 8px transparent;
+  z-index: 1;
+}
+
+#main-header #header-div .title-div .title {
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+#main-header #header-div .title-div .my-name {
+  font-size: 1.3vw;
+}
+
+#main-header #header-div .title-div a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#main-header #header-div .gradient-animation {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #fffa80 0%, #e4205d 45%, #4a3ece 100%);
+}
+/*# sourceMappingURL=style.css.map */
