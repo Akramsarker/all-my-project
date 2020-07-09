@@ -10,7 +10,8 @@ body {
   line-height: 1.5;
   background-color: #15202b;
   color: #ffffff;
-  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   border: 10px solid #ffffff;
   box-shadow: inset 0px 0px 5px rgba($color: #ffffff, $alpha: 1),
     inset 0px 0px 10px rgba($color: #ffffff, $alpha: 0.6),
@@ -21,6 +22,7 @@ body {
 #main-header {
   text-align: center;
   padding: 3vw;
+  margin-bottom: 5vw;
 
   #header-div {
     position: relative;
@@ -38,13 +40,14 @@ body {
       z-index: 1;
       background-color: #15202b;
 
-      .title {
+      .header-title {
         font-size: 2.2vw;
         margin-bottom: 1vw;
       }
 
       .my-name {
         font-size: 1.5vw;
+        font-weight: 200;
       }
 
       a {
@@ -110,5 +113,13 @@ body {
     margin: 0 10vw;
     font-size: 1.4vw;
     font-weight: 300;
+  }
+}
+
+// Days section
+#days-section {
+  .days-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
   }
 }
