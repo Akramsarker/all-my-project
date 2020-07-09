@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+  font-family: "Raleway", sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
   background-color: #15202b;
   color: #ffffff;
   height: 100vh;
@@ -23,25 +24,27 @@ body {
 
   #header-div {
     position: relative;
-    background-color: #e4205d;
-    width: 45%;
+    width: 48%;
     margin: auto;
+    border-radius: 10px;
+    margin-bottom: 3vw;
 
     .title-div {
       position: relative;
       padding: 2vw;
       border-radius: 10px;
+
       border: solid 8px transparent;
       z-index: 1;
-      // background-color: #15202b;
+      background-color: #15202b;
 
       .title {
-        font-size: 2vw;
+        font-size: 2.2vw;
         margin-bottom: 1vw;
       }
 
       .my-name {
-        font-size: 1.3vw;
+        font-size: 1.5vw;
       }
 
       a {
@@ -53,16 +56,59 @@ body {
 
     .gradient-animation {
       position: absolute;
-      top: 0%;
-      left: 0%;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(
-        135deg,
-        #fffa80 0%,
-        #e4205d 45%,
-        #4a3ece 100%
-      );
+      top: -5px;
+      left: -5px;
+      bottom: -5px;
+      right: -5px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #fffa80, #e4205d, #4a3ece);
+      animation: backgroundLinear 1s linear infinite;
     }
+
+    @keyframes backgroundLinear {
+      0% {
+        background: linear-gradient(
+          135deg,
+          #fffa80 0%,
+          #e4205d 45%,
+          #4a3ece 100%
+        );
+        filter: hue-rotate(0) blur(3px);
+      }
+
+      // 33% {
+      //   background: linear-gradient(
+      //     135deg,
+      //     #e4205d 0%,
+      //     #fffa80 45%,
+      //     #4a3ece 100%
+      //   );
+      // }
+
+      // 66% {
+      //   background: linear-gradient(
+      //     135deg,
+      //     #fffa80 0%,
+      //     #4a3ece 45%,
+      //     #e4205d 100%
+      //   );
+      // }
+
+      100% {
+        // background: linear-gradient(
+        //   135deg,
+        //   #4a3ece 0,
+        //   #e4205d 45%,
+        //   #fffa80 100%
+        // );
+        filter: hue-rotate(360deg) blur(3px);
+      }
+    }
+  }
+
+  .about-me {
+    margin: 0 10vw;
+    font-size: 1.4vw;
+    font-weight: 300;
   }
 }

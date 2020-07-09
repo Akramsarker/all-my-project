@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
   background-color: #15202b;
   color: #ffffff;
   height: 100vh;
@@ -23,9 +23,10 @@ body {
 
 #main-header #header-div {
   position: relative;
-  background-color: #e4205d;
-  width: 45%;
+  width: 48%;
   margin: auto;
+  border-radius: 10px;
+  margin-bottom: 3vw;
 }
 
 #main-header #header-div .title-div {
@@ -34,15 +35,16 @@ body {
   border-radius: 10px;
   border: solid 8px transparent;
   z-index: 1;
+  background-color: #15202b;
 }
 
 #main-header #header-div .title-div .title {
-  font-size: 2vw;
+  font-size: 2.2vw;
   margin-bottom: 1vw;
 }
 
 #main-header #header-div .title-div .my-name {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
 }
 
 #main-header #header-div .title-div a {
@@ -53,10 +55,43 @@ body {
 
 #main-header #header-div .gradient-animation {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(135deg, #fffa80 0%, #e4205d 45%, #4a3ece 100%);
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fffa80, #e4205d, #4a3ece);
+  -webkit-animation: backgroundLinear 1s linear infinite;
+          animation: backgroundLinear 1s linear infinite;
+}
+
+@-webkit-keyframes backgroundLinear {
+  0% {
+    background: linear-gradient(135deg, #fffa80 0%, #e4205d 45%, #4a3ece 100%);
+    -webkit-filter: hue-rotate(0) blur(3px);
+            filter: hue-rotate(0) blur(3px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(3px);
+            filter: hue-rotate(360deg) blur(3px);
+  }
+}
+
+@keyframes backgroundLinear {
+  0% {
+    background: linear-gradient(135deg, #fffa80 0%, #e4205d 45%, #4a3ece 100%);
+    -webkit-filter: hue-rotate(0) blur(3px);
+            filter: hue-rotate(0) blur(3px);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg) blur(3px);
+            filter: hue-rotate(360deg) blur(3px);
+  }
+}
+
+#main-header .about-me {
+  margin: 0 10vw;
+  font-size: 1.4vw;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */
