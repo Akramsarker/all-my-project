@@ -5,13 +5,18 @@
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: #232323;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
   background-color: #15202b;
   color: #ffffff;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   border: 10px solid #ffffff;
   -webkit-box-shadow: inset 0px 0px 5px white, inset 0px 0px 10px rgba(255, 255, 255, 0.6), inset 0px 0px 20px rgba(255, 255, 255, 0.3), inset 0px 0px 40px rgba(255, 255, 255, 0.1);
           box-shadow: inset 0px 0px 5px white, inset 0px 0px 10px rgba(255, 255, 255, 0.6), inset 0px 0px 20px rgba(255, 255, 255, 0.3), inset 0px 0px 40px rgba(255, 255, 255, 0.1);
@@ -107,13 +112,13 @@ a {
 }
 
 #days-section .days-container {
-  padding: 1vw 5vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   grid-column-gap: 4vw;
   grid-row-gap: 6vw;
+  padding: 1vw 5vw 8vw;
 }
 
 #days-section .days-container .day {
@@ -124,7 +129,7 @@ a {
 }
 
 #days-section .days-container .day .day-title {
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   font-weight: 700;
   margin-bottom: 1.2vw;
 }
