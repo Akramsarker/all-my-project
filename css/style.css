@@ -17,9 +17,17 @@ body {
           box-shadow: inset 0px 0px 5px white, inset 0px 0px 10px rgba(255, 255, 255, 0.6), inset 0px 0px 20px rgba(255, 255, 255, 0.3), inset 0px 0px 40px rgba(255, 255, 255, 0.1);
 }
 
+img {
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
+}
+
 #main-header {
   text-align: center;
-  padding: 3vw;
+  padding: 5vw 3vw;
   margin-bottom: 5vw;
 }
 
@@ -99,9 +107,41 @@ body {
 }
 
 #days-section .days-container {
+  padding: 1vw 5vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-column-gap: 4vw;
+  grid-row-gap: 6vw;
+}
+
+#days-section .days-container .day {
+  background: #0f1822;
+  padding: 2vw;
+  border-radius: 20px;
+  border: solid #17bf63 3px;
+}
+
+#days-section .days-container .day .day-title {
+  font-size: 1.4vw;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+}
+
+#days-section .days-container .day .day-p {
+  font-size: 1vw;
+  text-align: left;
+  margin-bottom: 1.2vw;
+}
+
+#days-section .days-container .day .day-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#days-section .days-container .day .day-img img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 /*# sourceMappingURL=style.css.map */

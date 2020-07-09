@@ -19,9 +19,18 @@ body {
     inset 0px 0px 40px rgba($color: #ffffff, $alpha: 0.1);
 }
 
+img {
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
+}
+
+// Main Header
 #main-header {
   text-align: center;
-  padding: 3vw;
+  padding: 5vw 3vw;
   margin-bottom: 5vw;
 
   #header-div {
@@ -79,31 +88,7 @@ body {
         filter: hue-rotate(0) blur(3px);
       }
 
-      // 33% {
-      //   background: linear-gradient(
-      //     135deg,
-      //     #e4205d 0%,
-      //     #fffa80 45%,
-      //     #4a3ece 100%
-      //   );
-      // }
-
-      // 66% {
-      //   background: linear-gradient(
-      //     135deg,
-      //     #fffa80 0%,
-      //     #4a3ece 45%,
-      //     #e4205d 100%
-      //   );
-      // }
-
       100% {
-        // background: linear-gradient(
-        //   135deg,
-        //   #4a3ece 0,
-        //   #e4205d 45%,
-        //   #fffa80 100%
-        // );
         filter: hue-rotate(360deg) blur(3px);
       }
     }
@@ -119,7 +104,38 @@ body {
 // Days section
 #days-section {
   .days-container {
+    padding: 1vw 5vw;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 4vw;
+    grid-row-gap: 6vw;
+
+    .day {
+      background: #0f1822;
+      padding: 2vw;
+      border-radius: 20px;
+      border: solid #17bf63 3px;
+
+      .day-title {
+        font-size: 1.4vw;
+        font-weight: 700;
+        margin-bottom: 1.2vw;
+      }
+
+      .day-p {
+        font-size: 1vw;
+        text-align: left;
+        margin-bottom: 1.2vw;
+      }
+
+      .day-img {
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+          transform: scale(1.08);
+        }
+      }
+    }
   }
 }
