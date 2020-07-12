@@ -114,8 +114,8 @@ a {
 #days-section .days-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 4vw;
   grid-row-gap: 6vw;
   padding: 1vw 5vw 8vw;
@@ -143,6 +143,8 @@ a {
 #days-section .days-container .day .day-img {
   overflow: hidden;
   border-radius: 10px;
+  width: 100%;
+  height: 12vw;
 }
 
 #days-section .days-container .day .day-img img {

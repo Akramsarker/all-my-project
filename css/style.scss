@@ -110,7 +110,7 @@ a {
 #days-section {
   .days-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 4vw;
     grid-row-gap: 6vw;
     padding: 1vw 5vw 8vw;
@@ -136,8 +136,8 @@ a {
       .day-img {
         overflow: hidden;
         border-radius: 10px;
-        // width: 100%;
-        // height: 12vw;
+        width: 100%;
+        height: 12vw;
 
         img {
           transform: scale(1.08);
