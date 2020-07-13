@@ -115,6 +115,31 @@ a {
     grid-row-gap: 6vw;
     padding: 1vw 5vw 8vw;
 
+    .start-day {
+      grid-column: 2 / span 2;
+      display: grid;
+      grid-template-columns: 5fr 3fr;
+      justify-content: center;
+      align-items: center;
+
+      .day-img {
+        margin-right: 2vw;
+      }
+
+      .start-day-content {
+        .day-title {
+          font-size: 2vw;
+          margin-bottom: 2vw;
+        }
+
+        .day-p {
+          font-size: 1.3vw;
+          text-align: left;
+          margin-bottom: 1.2vw;
+        }
+      }
+    }
+
     .day {
       background: #0f1822;
       padding: 2vw;

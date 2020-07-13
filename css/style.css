@@ -121,6 +121,37 @@ a {
   padding: 1vw 5vw 8vw;
 }
 
+#days-section .days-container .start-day {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 3fr;
+      grid-template-columns: 5fr 3fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#days-section .days-container .start-day .day-img {
+  margin-right: 2vw;
+}
+
+#days-section .days-container .start-day .start-day-content .day-title {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+#days-section .days-container .start-day .start-day-content .day-p {
+  font-size: 1.3vw;
+  text-align: left;
+  margin-bottom: 1.2vw;
+}
+
 #days-section .days-container .day {
   background: #0f1822;
   padding: 2vw;
