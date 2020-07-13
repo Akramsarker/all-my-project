@@ -32,8 +32,8 @@ a {
 
 #main-header {
   text-align: center;
-  padding: 5vw 3vw;
-  margin-bottom: 5vw;
+  padding: 6vw 3vw;
+  margin-bottom: 3vw;
 }
 
 #main-header #header-div {
@@ -106,9 +106,86 @@ a {
 }
 
 #main-header .about-me {
-  margin: 0 10vw;
+  margin: 0 10vw 3vw;
   font-size: 1.4vw;
   font-weight: 300;
+}
+
+#main-header #navbar {
+  margin-top: 8vw;
+  padding: 0 18vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-header #navbar .d-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-header #navbar .d-line > div {
+  position: relative;
+  height: 0.6vw;
+  width: 13vw;
+  background: #ffffff;
+  border-radius: 10vw;
+}
+
+#main-header #navbar .d-line .d-line-1 {
+  background: #17bf63;
+  margin-bottom: 2vw;
+  right: 4vw;
+  -webkit-box-shadow: 0 0 20px #17bf63;
+          box-shadow: 0 0 20px #17bf63;
+}
+
+#main-header #navbar .d-line .d-line-2 {
+  background: #791f3b;
+  left: 4vw;
+}
+
+#main-header #navbar > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main-header #navbar > div a {
+  text-decoration: none;
+  font-size: 1.8vw;
+  font-weight: 800;
+}
+
+#main-header #navbar .days-link a {
+  color: #17bf63;
+  text-shadow: 0 0 20px #17bf63;
+}
+
+#main-header #navbar .projects-link a {
+  color: #791f3b;
 }
 
 #days-section .days-container {
@@ -148,8 +225,6 @@ a {
 
 #days-section .days-container .start-day .start-day-content .day-p {
   font-size: 1.3vw;
-  text-align: left;
-  margin-bottom: 1.2vw;
 }
 
 #days-section .days-container .day {

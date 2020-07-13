@@ -34,9 +34,14 @@ a {
 
 // Main Header
 #main-header {
+  // height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   text-align: center;
-  padding: 5vw 3vw;
-  margin-bottom: 5vw;
+  padding: 6vw 3vw;
+  margin-bottom: 3vw;
 
   #header-div {
     position: relative;
@@ -100,9 +105,66 @@ a {
   }
 
   .about-me {
-    margin: 0 10vw;
+    margin: 0 10vw 3vw;
     font-size: 1.4vw;
     font-weight: 300;
+  }
+
+  #navbar {
+    margin-top: 8vw;
+    padding: 0 18vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .d-line {
+      display: flex;
+      flex-direction: column;
+      & > div {
+        position: relative;
+        height: 0.6vw;
+        width: 13vw;
+        background: #ffffff;
+        border-radius: 10vw;
+      }
+
+      .d-line-1 {
+        background: #17bf63;
+        margin-bottom: 2vw;
+        right: 4vw;
+        box-shadow: 0 0 20px #17bf63;
+      }
+      .d-line-2 {
+        background: #791f3b;
+        left: 4vw;
+        // box-shadow: 0 0 20px #e4205d;
+      }
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        font-size: 1.8vw;
+        font-weight: 800;
+      }
+    }
+    .days-link {
+      a {
+        color: #17bf63;
+        text-shadow: 0 0 20px #17bf63;
+      }
+    }
+
+    .projects-link {
+      a {
+        color: #791f3b;
+      }
+    }
   }
 }
 
@@ -134,8 +196,6 @@ a {
 
         .day-p {
           font-size: 1.3vw;
-          text-align: left;
-          margin-bottom: 1.2vw;
         }
       }
     }
