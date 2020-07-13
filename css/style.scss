@@ -129,15 +129,25 @@ a {
       }
 
       .d-line-1 {
-        background: #17bf63;
         margin-bottom: 2vw;
         right: 4vw;
-        box-shadow: 0 0 20px #17bf63;
+        background: #0d5c30;
       }
+
       .d-line-2 {
-        background: #791f3b;
+        background: #631b32;
         left: 4vw;
         // box-shadow: 0 0 20px #e4205d;
+      }
+
+      .line-current-green-light {
+        box-shadow: 0 0 20px #17bf63;
+        background: #17bf63;
+      }
+
+      .line-current-red-light {
+        box-shadow: 0 0 20px #e4205d;
+        background: #e4205d;
       }
     }
 
@@ -155,6 +165,9 @@ a {
     }
     .days-link {
       a {
+        color: #0d5c30;
+      }
+      .a-current-green-light {
         color: #17bf63;
         text-shadow: 0 0 40px #17bf63;
       }
@@ -162,7 +175,12 @@ a {
 
     .projects-link {
       a {
-        color: #791f3b;
+        color: #631b32;
+      }
+
+      .a-current-red-light {
+        color: #e4205d;
+        text-shadow: 0 0 40px #e4205d;
       }
     }
   }
