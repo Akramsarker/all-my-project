@@ -33,7 +33,7 @@ a {
 #main-header {
   text-align: center;
   padding: 6vw 3vw;
-  margin-bottom: 3vw;
+  margin-bottom: 1vw;
 }
 
 #main-header #header-div {
@@ -106,7 +106,7 @@ a {
 }
 
 #main-header .about-me {
-  margin: 0 10vw 3vw;
+  margin: 0 8vw 3vw;
   font-size: 1.4vw;
   font-weight: 300;
 }
@@ -181,7 +181,7 @@ a {
 
 #main-header #navbar .days-link a {
   color: #17bf63;
-  text-shadow: 0 0 20px #17bf63;
+  text-shadow: 0 0 40px #17bf63;
 }
 
 #main-header #navbar .projects-link a {
@@ -232,6 +232,14 @@ a {
   padding: 2vw;
   border-radius: 20px;
   border: solid #17bf63 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#days-section .days-container .day:hover {
+  -webkit-box-shadow: 0 0 10px #17bf63;
+          box-shadow: 0 0 10px #17bf63;
+  cursor: pointer;
 }
 
 #days-section .days-container .day .day-title {

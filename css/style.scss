@@ -41,7 +41,7 @@ a {
   // align-items: center;
   text-align: center;
   padding: 6vw 3vw;
-  margin-bottom: 3vw;
+  margin-bottom: 1vw;
 
   #header-div {
     position: relative;
@@ -105,7 +105,7 @@ a {
   }
 
   .about-me {
-    margin: 0 10vw 3vw;
+    margin: 0 8vw 3vw;
     font-size: 1.4vw;
     font-weight: 300;
   }
@@ -156,7 +156,7 @@ a {
     .days-link {
       a {
         color: #17bf63;
-        text-shadow: 0 0 20px #17bf63;
+        text-shadow: 0 0 40px #17bf63;
       }
     }
 
@@ -205,6 +205,12 @@ a {
       padding: 2vw;
       border-radius: 20px;
       border: solid #17bf63 3px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        box-shadow: 0 0 10px #17bf63;
+        cursor: pointer;
+      }
 
       .day-title {
         font-size: 1.5vw;
