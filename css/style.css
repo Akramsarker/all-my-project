@@ -56,11 +56,24 @@ a {
 #main-header #header-div .title-div .header-title {
   font-size: 2.2vw;
   margin-bottom: 1vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-header #header-div .title-div .header-title:hover {
+  color: #1d9ceb;
 }
 
 #main-header #header-div .title-div .my-name {
   font-size: 1.5vw;
   font-weight: 200;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-header #header-div .title-div .my-name:hover {
+  color: #17bf63;
 }
 
 #main-header #header-div .title-div a {
