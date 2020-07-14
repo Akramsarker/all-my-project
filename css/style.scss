@@ -62,7 +62,7 @@ a {
       .header-title {
         font-size: 2.2vw;
         margin-bottom: 1vw;
-        transition: 0.5s;
+        transition: color 0.5s;
 
         &:hover {
           color: #1d9ceb;
@@ -73,7 +73,7 @@ a {
         font-size: 1.5vw;
         font-weight: 200;
         display: inline-block;
-        transition: 0.5s;
+        transition: color 0.5s;
 
         &:hover {
           color: #17bf63;
