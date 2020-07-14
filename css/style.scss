@@ -177,6 +177,11 @@ a {
     .days-link {
       a {
         color: #0d5c30;
+        transition: 0.5s;
+        &:hover {
+          color: #17bf63;
+          text-shadow: 0 0 40px #17bf63;
+        }
       }
       .a-current-green-light {
         color: #17bf63;
@@ -187,6 +192,12 @@ a {
     .projects-link {
       a {
         color: #23516e;
+        transition: 0.5s;
+
+        &:hover {
+          color: #1da1f2;
+          text-shadow: 0 0 40px #1da1f2;
+        }
       }
 
       .a-current-blue-light {
@@ -238,7 +249,7 @@ a {
       text-align: left;
 
       &:hover {
-        box-shadow: 0 0 10px #17bf63;
+        box-shadow: 0 0 1vw #17bf63;
         cursor: pointer;
       }
 
@@ -286,7 +297,7 @@ a {
       transition: all 0.5s ease;
 
       &:hover {
-        box-shadow: 0 0 10px #1da1f2;
+        box-shadow: 0 0 1vw #1da1f2;
         cursor: pointer;
       }
 

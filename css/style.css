@@ -204,6 +204,13 @@ a {
 
 #main-header #navbar .days-link a {
   color: #0d5c30;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-header #navbar .days-link a:hover {
+  color: #17bf63;
+  text-shadow: 0 0 40px #17bf63;
 }
 
 #main-header #navbar .days-link .a-current-green-light {
@@ -213,6 +220,13 @@ a {
 
 #main-header #navbar .projects-link a {
   color: #23516e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-header #navbar .projects-link a:hover {
+  color: #1da1f2;
+  text-shadow: 0 0 40px #1da1f2;
 }
 
 #main-header #navbar .projects-link .a-current-blue-light {
@@ -270,8 +284,8 @@ a {
 }
 
 #days-section .days-container .day:hover {
-  -webkit-box-shadow: 0 0 10px #17bf63;
-          box-shadow: 0 0 10px #17bf63;
+  -webkit-box-shadow: 0 0 1vw #17bf63;
+          box-shadow: 0 0 1vw #17bf63;
   cursor: pointer;
 }
 
@@ -318,8 +332,8 @@ a {
 }
 
 #projects .projects-container .project:hover {
-  -webkit-box-shadow: 0 0 10px #1da1f2;
-          box-shadow: 0 0 10px #1da1f2;
+  -webkit-box-shadow: 0 0 1vw #1da1f2;
+          box-shadow: 0 0 1vw #1da1f2;
   cursor: pointer;
 }
 
