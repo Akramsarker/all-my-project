@@ -151,7 +151,7 @@ a {
 }
 
 #main-header #navbar .d-line .d-line-2 {
-  background: #631b32;
+  background: #23516e;
   left: 4vw;
 }
 
@@ -161,10 +161,10 @@ a {
   background: #17bf63;
 }
 
-#main-header #navbar .d-line .line-current-red-light {
-  -webkit-box-shadow: 0 0 20px #e4205d;
-          box-shadow: 0 0 20px #e4205d;
-  background: #e4205d;
+#main-header #navbar .d-line .line-current-blue-light {
+  -webkit-box-shadow: 0 0 20px #1da1f2;
+          box-shadow: 0 0 20px #1da1f2;
+  background: #1da1f2;
 }
 
 #main-header #navbar > div {
@@ -199,12 +199,12 @@ a {
 }
 
 #main-header #navbar .projects-link a {
-  color: #631b32;
+  color: #23516e;
 }
 
-#main-header #navbar .projects-link .a-current-red-light {
-  color: #e4205d;
-  text-shadow: 0 0 40px #e4205d;
+#main-header #navbar .projects-link .a-current-blue-light {
+  color: #1da1f2;
+  text-shadow: 0 0 40px #1da1f2;
 }
 
 #days-section .days-container {
@@ -253,6 +253,7 @@ a {
   border: solid #17bf63 3px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  text-align: left;
 }
 
 #days-section .days-container .day:hover {
@@ -269,7 +270,6 @@ a {
 
 #days-section .days-container .day .day-p {
   font-size: 1vw;
-  text-align: left;
   margin-bottom: 1.2vw;
 }
 
@@ -279,6 +279,56 @@ a {
 }
 
 #days-section .days-container .day .day-img img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+#projects .projects-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4vw;
+  grid-row-gap: 6vw;
+  padding: 1vw 5vw 8vw;
+}
+
+#projects .projects-container .project {
+  display: block;
+  text-decoration: none;
+  background: #0f1822;
+  padding: 2vw;
+  border-radius: 20px;
+  border: solid #1da1f2 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#projects .projects-container .project:hover {
+  -webkit-box-shadow: 0 0 10px #1da1f2;
+          box-shadow: 0 0 10px #1da1f2;
+  cursor: pointer;
+}
+
+#projects .projects-container .project .project-title {
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 1.2vw;
+  text-align: left;
+}
+
+#projects .projects-container .project .project-title-description {
+  font-size: 1vw;
+  margin-bottom: 1.2vw;
+}
+
+#projects .projects-container .project .project-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#projects .projects-container .project .project-img img {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }

@@ -135,7 +135,7 @@ a {
       }
 
       .d-line-2 {
-        background: #631b32;
+        background: #23516e;
         left: 4vw;
         // box-shadow: 0 0 20px #e4205d;
       }
@@ -145,9 +145,9 @@ a {
         background: #17bf63;
       }
 
-      .line-current-red-light {
-        box-shadow: 0 0 20px #e4205d;
-        background: #e4205d;
+      .line-current-blue-light {
+        box-shadow: 0 0 20px #1da1f2;
+        background: #1da1f2;
       }
     }
 
@@ -175,12 +175,12 @@ a {
 
     .projects-link {
       a {
-        color: #631b32;
+        color: #23516e;
       }
 
-      .a-current-red-light {
-        color: #e4205d;
-        text-shadow: 0 0 40px #e4205d;
+      .a-current-blue-light {
+        color: #1da1f2;
+        text-shadow: 0 0 40px #1da1f2;
       }
     }
   }
@@ -224,6 +224,7 @@ a {
       border-radius: 20px;
       border: solid #17bf63 3px;
       transition: all 0.5s ease;
+      text-align: left;
 
       &:hover {
         box-shadow: 0 0 10px #17bf63;
@@ -238,7 +239,6 @@ a {
 
       .day-p {
         font-size: 1vw;
-        text-align: left;
         margin-bottom: 1.2vw;
       }
 
@@ -247,6 +247,54 @@ a {
         border-radius: 10px;
         // width: 100%;
         // height: 12vw;
+
+        img {
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
+}
+
+// Project Section
+#projects {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4vw;
+    grid-row-gap: 6vw;
+    padding: 1vw 5vw 8vw;
+
+    .project {
+      display: block;
+      text-decoration: none;
+      background: #0f1822;
+      padding: 2vw;
+      border-radius: 20px;
+      border: solid #1da1f2 3px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        box-shadow: 0 0 10px #1da1f2;
+        cursor: pointer;
+      }
+
+      .project-title {
+        text-transform: uppercase;
+        font-size: 2vw;
+        font-weight: 700;
+        margin-bottom: 1.2vw;
+        text-align: left;
+      }
+
+      .project-title-description {
+        font-size: 1vw;
+        margin-bottom: 1.2vw;
+      }
+
+      .project-img {
+        overflow: hidden;
+        border-radius: 10px;
 
         img {
           transform: scale(1.08);
