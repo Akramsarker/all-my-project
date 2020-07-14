@@ -177,7 +177,7 @@ a {
     .days-link {
       a {
         color: #0d5c30;
-        transition: 0.5s;
+        transition: color 0.5s, text-shadow 0.5s;
         &:hover {
           color: #17bf63;
           text-shadow: 0 0 40px #17bf63;
@@ -192,7 +192,7 @@ a {
     .projects-link {
       a {
         color: #23516e;
-        transition: 0.5s;
+        transition: color 0.5s, text-shadow 0.5s;
 
         &:hover {
           color: #1da1f2;

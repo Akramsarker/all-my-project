@@ -204,8 +204,8 @@ a {
 
 #main-header #navbar .days-link a {
   color: #0d5c30;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: color 0.5s, text-shadow 0.5s;
+  transition: color 0.5s, text-shadow 0.5s;
 }
 
 #main-header #navbar .days-link a:hover {
@@ -220,8 +220,8 @@ a {
 
 #main-header #navbar .projects-link a {
   color: #23516e;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: color 0.5s, text-shadow 0.5s;
+  transition: color 0.5s, text-shadow 0.5s;
 }
 
 #main-header #navbar .projects-link a:hover {
