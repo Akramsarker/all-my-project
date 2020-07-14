@@ -443,9 +443,9 @@ a {
 @media (max-width: 600px) {
   body {
     border: 5px solid #ffffff;
-    box-shadow: inset 0px 0px 4px rgba($color: #ffffff, $alpha: 1),
-      inset 0px 0px 9px rgba($color: #ffffff, $alpha: 0.6),
-      inset 0px 0px 16px rgba($color: #ffffff, $alpha: 0.3);
+    box-shadow: inset 0px 0px 2px rgba($color: #ffffff, $alpha: 1),
+      inset 0px 0px 8px rgba($color: #ffffff, $alpha: 0.6),
+      inset 0px 0px 12px rgba($color: #ffffff, $alpha: 0.3);
   }
 
   // Main Header
@@ -453,7 +453,7 @@ a {
     padding: 10vw 3vw 8vw;
 
     #header-div {
-      width: 75%;
+      width: 80%;
       margin-bottom: 6vw;
 
       .title-div {
@@ -485,11 +485,96 @@ a {
         .d-line-1 {
           margin-bottom: 3.5vw;
         }
+
+        .line-current-green-light {
+          box-shadow: 0 0 10px #17bf63;
+        }
+
+        .line-current-blue-light {
+          box-shadow: 0 0 10px #1da1f2;
+        }
       }
 
       & > div {
         a {
           font-size: 3.6vw;
+        }
+      }
+
+      .days-link {
+        .a-current-green-light {
+          color: #17bf63;
+          text-shadow: 0 0 20px #17bf63;
+        }
+      }
+
+      .projects-link {
+        .a-current-blue-light {
+          text-shadow: 0 0 20px #1da1f2;
+        }
+      }
+    }
+  }
+
+  // Days section
+  #days-section {
+    .days-container {
+      grid-template-columns: 1fr;
+      padding: 1vw 8vw 8vw;
+      grid-row-gap: 8vw;
+
+      .start-day {
+        grid-column: unset;
+        display: flex;
+        flex-direction: column;
+        .start-day-content {
+          order: 1;
+
+          .day-title {
+            font-size: 4vw;
+          }
+
+          .day-p {
+            font-size: 3vw;
+          }
+        }
+
+        .day-img {
+          order: 2;
+        }
+      }
+
+      .day {
+        border: solid #17bf63 2px;
+        padding: 4vw;
+        .day-title {
+          font-size: 4vw;
+        }
+
+        .day-p {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+
+  // Project Section
+  #projects {
+    .projects-container {
+      padding: 1vw 8vw 8vw;
+      grid-row-gap: 8vw;
+      grid-template-columns: 1fr;
+
+      .project {
+        border: solid #1da1f2 2px;
+        padding: 4vw;
+
+        .project-title {
+          font-size: 4vw;
+        }
+
+        .project-title-description {
+          font-size: 3vw;
         }
       }
     }
