@@ -438,3 +438,60 @@ a {
     }
   }
 }
+
+// FOR SMART PHONE
+@media (max-width: 600px) {
+  body {
+    border: 5px solid #ffffff;
+    box-shadow: inset 0px 0px 4px rgba($color: #ffffff, $alpha: 1),
+      inset 0px 0px 9px rgba($color: #ffffff, $alpha: 0.6),
+      inset 0px 0px 16px rgba($color: #ffffff, $alpha: 0.3);
+  }
+
+  // Main Header
+  #main-header {
+    padding: 10vw 3vw 8vw;
+
+    #header-div {
+      width: 75%;
+      margin-bottom: 6vw;
+
+      .title-div {
+        padding: 3vw;
+
+        .header-title {
+          font-size: 3.5vw;
+        }
+
+        .my-name {
+          font-size: 3.2vw;
+        }
+      }
+    }
+
+    .about-me {
+      margin: 0 3.5vw 10vw;
+      font-size: 3vw;
+    }
+
+    #navbar {
+      padding: 0 10vw;
+      .d-line {
+        & > div {
+          height: 1vw;
+          width: 20vw;
+        }
+
+        .d-line-1 {
+          margin-bottom: 3.5vw;
+        }
+      }
+
+      & > div {
+        a {
+          font-size: 3.6vw;
+        }
+      }
+    }
+  }
+}

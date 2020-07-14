@@ -440,4 +440,45 @@ a {
             transform: scale(1.08);
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    border: 5px solid #ffffff;
+    -webkit-box-shadow: inset 0px 0px 4px white, inset 0px 0px 9px rgba(255, 255, 255, 0.6), inset 0px 0px 16px rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0px 0px 4px white, inset 0px 0px 9px rgba(255, 255, 255, 0.6), inset 0px 0px 16px rgba(255, 255, 255, 0.3);
+  }
+  #main-header {
+    padding: 10vw 3vw 8vw;
+  }
+  #main-header #header-div {
+    width: 75%;
+    margin-bottom: 6vw;
+  }
+  #main-header #header-div .title-div {
+    padding: 3vw;
+  }
+  #main-header #header-div .title-div .header-title {
+    font-size: 3.5vw;
+  }
+  #main-header #header-div .title-div .my-name {
+    font-size: 3.2vw;
+  }
+  #main-header .about-me {
+    margin: 0 3.5vw 10vw;
+    font-size: 3vw;
+  }
+  #main-header #navbar {
+    padding: 0 10vw;
+  }
+  #main-header #navbar .d-line > div {
+    height: 1vw;
+    width: 20vw;
+  }
+  #main-header #navbar .d-line .d-line-1 {
+    margin-bottom: 3.5vw;
+  }
+  #main-header #navbar > div a {
+    font-size: 3.6vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
