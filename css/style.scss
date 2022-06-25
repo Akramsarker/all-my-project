@@ -60,13 +60,10 @@ a {
       background-color: #15202b;
 
       .header-title {
-        font-size: 2.2vw;
+        font-size: 4vw;
         margin-bottom: 1vw;
-        transition: color 0.5s;
-
-        &:hover {
-          color: #1d9ceb;
-        }
+        cursor: unset;
+        color: #1d9ceb;
       }
 
       .my-name {
@@ -173,7 +170,9 @@ a {
         overflow: hidden;
         border-radius: 10px;
         img {
-          transform: scale(1.08);
+          // transform: scale(1.08);
+          border-radius: 10px;
+
         }
       }
     }

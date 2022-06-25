@@ -54,13 +54,9 @@ a {
 }
 
 #main-header #header-div .title-div .header-title {
-  font-size: 2.2vw;
+  font-size: 4vw;
   margin-bottom: 1vw;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-
-#main-header #header-div .title-div .header-title:hover {
+  cursor: unset;
   color: #1d9ceb;
 }
 
@@ -180,8 +176,7 @@ a {
 }
 
 #projects .projects-container .project .project-img img {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
+  border-radius: 10px;
 }
 
 .single-work {
