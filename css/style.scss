@@ -15,13 +15,6 @@ body {
   line-height: 1.5;
   background-color: #15202b;
   color: #ffffff;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  border: 10px solid #ffffff;
-  box-shadow: inset 0px 0px 5px rgba($color: #ffffff, $alpha: 1),
-    inset 0px 0px 10px rgba($color: #ffffff, $alpha: 0.6),
-    inset 0px 0px 20px rgba($color: #ffffff, $alpha: 0.3),
-    inset 0px 0px 40px rgba($color: #ffffff, $alpha: 0.1);
 }
 
 img {
@@ -367,13 +360,6 @@ a {
 
 // FOR SMART PHONE
 @media (max-width: 600px) {
-  body {
-    border: 5px solid #ffffff;
-    box-shadow: inset 0px 0px 2px rgba($color: #ffffff, $alpha: 1),
-      inset 0px 0px 8px rgba($color: #ffffff, $alpha: 0.6),
-      inset 0px 0px 12px rgba($color: #ffffff, $alpha: 0.3);
-  }
-
   // Main Header
   #main-header {
     padding: 10vw 3vw 8vw;
